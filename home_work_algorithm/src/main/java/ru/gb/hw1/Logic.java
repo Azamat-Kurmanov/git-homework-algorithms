@@ -7,6 +7,7 @@ public class Logic {
     private static int[] priceArr;
     private static int[] ramArr;
     private static int elements;
+    private static int price;
     private static int numberOfNotebooks = 10000; //---Кол-во ноутбуков
     private static int priceRange = 50;    //---Интервал цен
     private static int ramRange = 4;       //---Интервал по кол-ву оперативной памяти
@@ -44,7 +45,7 @@ public class Logic {
     //---Список цен
     public int[] getPriceRange(){
         int[] priceArr = new int[numberOfNotebooks];
-        int price=500;
+
         //---Создается массив в который зацикливаются записи со значениями, где указывается диапазон от 500 до 2000, до тех пор пока не дойдет до кол-ва ноутбуков
         for (int i = 0; i <= priceArr.length-1; i++) {
             while(true){

@@ -11,6 +11,19 @@ public class Notebook {
         this.manufacturer = manufacturer;
     }
 
+    //--------Основная логика сравнения----//
+    public int compareTo(Notebook n){
+        int res = Integer.compare(price, n.getPrice());
+        if (res==0){
+            res = Integer.compare(ramQuantity, n.getRamQuantity());
+            if (res==0){
+                return manufacturer.compareTo(n.getManufacturer());
+            }
+            return res;
+        }
+        return res;
+    }
+
     public int getPrice() {
         return price;
     }

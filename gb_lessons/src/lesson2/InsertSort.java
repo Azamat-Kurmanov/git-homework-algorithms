@@ -2,7 +2,7 @@ package lesson2;
 
 import java.util.Arrays;
 
-public class BubbleSort {
+public class InsertSort {
 
     public static void main(String[] args) {
         SimpleArray simpleArray = new SimpleArray();
@@ -10,19 +10,16 @@ public class BubbleSort {
         int[] arr = simpleArray.getSimpleArray();
         System.out.println(Arrays.toString(arr));
 
-        int limit = arr.length;
-        do {
-            limit--;
-            for (int i = 0; i < arr.length - 1; i++) {
-                if (arr[i] > arr[i + 1]) {
-                    int temp = arr[i];
-                    arr[i] = arr[i + 1];
-                    arr[i + 1] = temp;
-                }
+        for (int i = 1; i < arr.length; i++) {
+            int temp = arr[i];
+            int j = i - 1;
+            while (j>0 && arr[j]>=temp){
+                arr[j] = arr[j-1];
+                j--;
             }
-        } while(limit>0);
+            arr[j] = temp;
+        }
 
         System.out.println(Arrays.toString(arr));
     }
-
 }
