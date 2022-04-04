@@ -14,7 +14,7 @@ public class Activity {
     }
 
     private static void testQueue() {
-        Queue<Integer> queue = new QueueImpl<>(4);
+        Queue<Integer> queue = new QueueImpl<>(6);
 
         System.out.println("add element: " + queue.insert(34));
         System.out.println("add element: " + queue.insert(12));
