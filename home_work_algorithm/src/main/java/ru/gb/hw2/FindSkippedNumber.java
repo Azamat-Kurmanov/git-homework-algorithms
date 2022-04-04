@@ -6,9 +6,9 @@ import ru.gb.hw2.queue.QueueImpl;
 public class FindSkippedNumber {
 
     public static void main(String[] args) {
-        //---------Подзадача №1--------------//
+        //---------Подзадача №1------------//
         testQueue();
-        //---------Подзадача №2--------------//
+        //---------Подзадача №2------------//
         System.out.println(findNumber(new int[]{1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12, 13, 14, 15, 16})); // => 11
         System.out.println(findNumber(new int[]{1, 2, 4, 5, 6}));                                     // => 3
         System.out.println(findNumber(new int[]{2, 3, 4, 5, 6, 7, 8}));                               // => 1

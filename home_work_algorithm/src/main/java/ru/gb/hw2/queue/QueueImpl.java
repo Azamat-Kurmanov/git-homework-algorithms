@@ -74,7 +74,6 @@ public class QueueImpl<E> implements Queue<E>{
     @Override
     public String toString() {
 //        StringBuilder sb = new StringBuilder("[");
-//        System.out.println("data: " + Arrays.toString(data));
 //        for (int i = head; i <= tail; i++) {
 //            sb.append(data[i]);
 //            if (i != tail){
