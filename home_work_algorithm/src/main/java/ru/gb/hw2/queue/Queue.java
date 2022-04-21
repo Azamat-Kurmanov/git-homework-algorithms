@@ -1,5 +1,6 @@
 package ru.gb.hw2.queue;
 
+
 public interface Queue<E> {
 
     boolean insert(E value);
